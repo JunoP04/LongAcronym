@@ -5,6 +5,7 @@ using UnityEngine;
 public class CorpseDestroy : MonoBehaviour
 {
     public GameObject deadThing;
+    public GameObject resourceCounter;
     private float destroyTime = 10.0f;
 
     // Start is called before the first frame update
@@ -16,6 +17,7 @@ public class CorpseDestroy : MonoBehaviour
     public void Decompose()
     {
         Debug.Log("Corpse has decomposed.");
+        resourceCounter.GetComponent<ResourceMonitor>().number += 1;
         Destroy(deadThing);
     }
 }

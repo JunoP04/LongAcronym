@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Blue
   - Green
+  - SphereLeft
+  - SphereRight
+  - MainColor
+  - Red
   layers:
   - Default
   - TransparentFX
